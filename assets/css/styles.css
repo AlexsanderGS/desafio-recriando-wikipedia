@@ -1,11 +1,18 @@
 body, html {
-
-    margin: 0;
     padding: 0;
+    margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    overflow-x: hidden;
 }
-ul { list-style: none; padding-left: 5px; }
-a { color:blue; text-decoration: none;}
+ul { 
+    list-style: none; 
+    padding-left: 5px; 
+}
+a { 
+    color:blue; 
+    text-decoration: none;
+}
 
 .bar {
     background-color: #f9f9fb;
@@ -15,36 +22,53 @@ a { color:blue; text-decoration: none;}
 }
 
 .content {
-    font-size: 15px;
-    text-align: justify;
-    max-width: 1440px;
-    margin: auto;
-    grid-gap: 3rem;
     display: grid;
-    gap: 3rem;
     grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
-    padding-left: 1rem;
-    padding-right: 1rem;
+    grid-template-columns: 15rem 1fr 15rem;
+    height: 100%;
 }
+
 
 .footer {
     text-align: center;
-    min-height: 100px;
-    border-top: solid 1px #cdcdcd;
-}
-
-.anchors {
+    grid-area: anchors;
     border-left: solid 1px #cdcdcd;
     padding-left: 15px;
 }
 
+.anchors {
+    grid-area: anchors;
+    border-left: 1px solid #cdcdcd;
+    padding: 1rem;
+    background-color: #f9f9fb;
+}
+
 .sidebar {
-    border-right: solid 1px #cdcdcd;
+    grid-area: sidebar;
+    background-color: #f9f9fb;
+    border-right: 1px solid #cdcdcd;
+    padding: 1rem;
+    overflow-y: auto; 
+    position: sticky;
+    top: 0; 
+}
+
+.main {
+    grid-area: main;
+    padding: 1rem;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.sidebar h2{
+    margin-top: 0;
 }
 
 .content_list a{
+    text-decoration: none;
     color: #36c;
+    display: block;
+    margin: 10px 0;
 }
 
 .blockquote {
