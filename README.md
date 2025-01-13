@@ -60,6 +60,10 @@ Durante o desenvolvimento do desafio, foi possível:
 ## Conclusão
 Este desafio foi uma excelente oportunidade para aplicar os conhecimentos adquiridos durante o curso de HTML. A criação de uma página da Wikipedia "moderna" não apenas reforçou os conceitos básicos, mas também desafiou a criatividade e o pensamento crítico no desenvolvimento de uma página funcional e bem estruturada.
 
+## Certificado
+![image](https://github.com/user-attachments/assets/273aa783-b622-4dd5-9e44-5218243f2d24)
+
+
 ---
 
 Desenvolvido por Alexsander Galvão.
